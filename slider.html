@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>3 Column Layout</title>
   <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/slider.css">
 </head>
 
 <body>
@@ -14,8 +15,17 @@
   <div class="container">
     <main class="center column">
       <article>
-        <h1>Heading</h1>
-        <p></p>
+        <h1>Slider</h1>
+        <div class="wrapper">
+          <button class="btn btn-prev" onclick="prevSlide()"><i class="material-icons">&#60</i></buton>
+          <button class="btn btn-next" onclick="nextSlide()"><i class="material-icons">&#62</i></button>
+          <div id="mySlider"></div>
+          <div id="circles"></div>
+
+      <style>
+              
+          </style>
+
       </article>
     </main>
     <nav class="left column">
@@ -43,6 +53,6 @@
       <a href="index.html"><img clas="logo-header" src="/assets/img/logo.png" alt="logo" width="150px" max-height="100px"></a>
     </footer>
   </div>
+<script src="/assets/js/slider.js"></script>
 </body>
-
 </html>
